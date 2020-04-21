@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Post from "./components/Post"
 
+
 class App extends Component {
   state = {};
 

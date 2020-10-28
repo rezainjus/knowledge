@@ -1,8 +1,19 @@
-package main 
+package main
 
-import ("fmt"
-		"math")
+import "fmt"
+
+func add(x float64,y float64) float64 {
+	return x+y
+}
+
+func multiple(a,b string) (string,string) {
+	return a,b
+}
 
 func main() {
-	fmt.Println("The squre root of 4 is " ,  math.Sqrt(4))
+	w1,w2 := "Hello","Reza"
+
+	fmt.Println(multiple(w1,w2))
+
+
 }

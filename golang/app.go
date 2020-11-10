@@ -2,13 +2,15 @@ package main
 
 import "fmt"
 
-// create a function that print every even numbers between 1 to 20
+func sum(a int,b int) int {
+	return a + b
+}
+
+func dec(c int, d int ) int {
+	return c - d
+}
 
 func main() {
-	m := make(map[string]int)
-
-	m["n1"] = 7
-	m["n2"] = 8
-
-	fmt.Println("map: ",m)
+	fmt.Println(sum(2,3))
+	fmt.Println(dec(17,7))
 }

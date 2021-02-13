@@ -1,8 +1,23 @@
-// const anchor = document.querySelector('a')!
+// classes
+class Invoice {
+    client: string;
+    details: string;
+    amount: number;
 
-// console.log(anchor.href)
+    constructor(c: string, d: string, a:number){
+        this.client = c
+        this.details = d 
+        this.amount = a
+    }
 
-// const form = document.querySelector('form')!
+    format() {
+        return `${this.client} owes ${this.amount} for ${this.details}`
+    }
+}
+
+const invOne = new Invoice('reza','poole ab',30000)
+
+console.log(invOne)
 
 const form = document.querySelector('.new-item-form')! as HTMLFormElement;
 

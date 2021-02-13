@@ -1,8 +1,15 @@
-const character = 'luigi'
-console.log(character)
-const inputs = document.querySelectorAll('input')
-console.log(inputs)
+let character = 'mario'
+let age = 30
+let isBlackBelt = false 
+// character = 20
+character = 'luigi'
 
-inputs.forEach(input => {
-    console.log(input)
-})
+// cant change types in ts
+
+
+const circ = (diameter) => {
+    return diameter * Math.PI
+}
+
+
+console.log(circ(3))
